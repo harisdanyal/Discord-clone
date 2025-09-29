@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord Clone </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark discord-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="front.html">
+      <img src="data:image/png;base64,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" 
+           alt="Discord Logo" width="32" height="32" class="me-2">
+      <span class="fw-bold">Discord</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="nitro.html">Nitro</a></li>
+        <li class="nav-item"><a class="nav-link" href="discover.html">Discover</a></li>
+        
+        <!-- Dropdowns -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="safety.html" data-bs-toggle="dropdown">Safety</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Overview</a></li>
+            <li><a class="dropdown-item" href="#">Safety Center</a></li>
+            <li><a class="dropdown-item" href="#">Parental Guide</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Quests</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">What are Quests?</a></li>
+            <li><a class="dropdown-item" href="#">For Developers</a></li>
+            <li><a class="dropdown-item" href="#">For Players</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Support</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Help Center</a></li>
+            <li><a class="dropdown-item" href="#">Community Forums</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Latest Posts</a></li>
+            <li><a class="dropdown-item" href="#">Product Updates</a></li>
+            <li><a class="dropdown-item" href="#">Community Stories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Developers</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Developer Portal</a></li>
+            <li><a class="dropdown-item" href="#">Documentation</a></li>
+            <li><a class="dropdown-item" href="#">API Reference</a></li>
+            <li><a class="dropdown-item" href="#">SDKs</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+      </ul>
+      <a href="#" class="btn btn-light btn-sm rounded-pill px-3">Log In</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="discord-hero text-white d-flex flex-column justify-content-center align-items-start px-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">GROUP CHAT THAT'S ALL FUN & GAMES</h1>
+        <p class="lead">Discord is great for playing games and chilling with friends, or even building a worldwide community.</p>
+        <a href="#" class="btn btn-light btn-lg rounded-pill me-2">Download for Windows</a>
+        <a href="#" class="btn btn-primary btn-lg rounded-pill">Open Discord in Browser</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/665643dd8c7ac752237b5cef_Discord-OG-1200x630.jpg" alt="Discord Illustration" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Wave Divider -->
+<div class="wave-divider"></div>
+
+<!-- Section 1 -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="https://discord.com/assets/46f6b7f6e3d7f65d7d3e.svg" alt="Invite Only" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Create an invite-only place where you belong</h2>
+        <p class="lead">Discord servers are organized into topic-based channels where you can collaborate, share, or just talk about your day without clogging up a group chat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider flip"></div>
+
+<!-- Section 2 -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center flex-lg-row-reverse">
+      <div class="col-lg-6">
+        <img src="https://discord.com/assets/2f96a1e7da38c7d36c2f.svg" alt="Hang Out" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Where hanging out is easy</h2>
+        <p class="lead">Grab a seat in a voice channel when you’re free. Friends can see you’re around and instantly pop in to talk without calling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider"></div>
+
+<!-- Section 3 -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="https://discord.com/assets/8a8375ab7908384e1fd6.svg" alt="Fandom" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">From few to a fandom</h2>
+        <p class="lead">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider flip"></div>
+
+<!-- Final Call to Action -->
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Ready to start your journey?</h2>
+    <a href="#" class="btn btn-primary btn-lg rounded-pill">Download for Windows</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="discord-footer text-white pt-5 pb-0">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-3 mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Discord_logo.svg" alt="Discord Logo" width="40" class="mb-4">
+        
+        <!-- Language Selector -->
+        <div class="dropdown mb-3">
+          <button class="btn btn-outline-light btn-sm dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+            <i class="bi bi-globe me-2"></i> English, USA
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">日本語</a></li>
+          </ul>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold">Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Download</a></li>
+              <li><a href="#">Nitro</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">App Directory</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Brand</a></li>
+              <li><a href="#">Newsroom</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold">Resources</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">College</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Safety</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Developers</a></li>
+              <li><a href="#">Quests</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3">
+            <h6 class="fw-bold">Policies</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookie Settings</a></li>
+              <li><a href="#">Guidelines</a></li>
+              <li><a href="#">Acknowledgements</a></li>
+              <li><a href="#">Licenses</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="footer-divider">
+
+    <!-- Bottom Footer -->
+    <div class="d-flex justify-content-between align-items-center py-3">
+      <a class="d-flex align-items-center text-white text-decoration-none" href="#">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Fvector-art%2F6892625-discord-logo-icon-editorial-vector&psig=AOvVaw3DfD51DyCG58_lc_7h7amW&ust=1758018416409000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKC0_MrI2o8DFQAAAAAdAAAAABAE" width="30" height="30" class="me-2">
+        <span class="fw-bold">Discord</span>
+      </a>
+      <a href="#" class="btn btn-primary btn-sm rounded-pill px-4 footer-signup-btn">Sign Up</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

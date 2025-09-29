@@ -1,0 +1,77 @@
+/* General */
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.navbar .nav-link {
+  color: #ddd !important;
+}
+
+.navbar .nav-link:hover,
+.dropdown-menu-dark .dropdown-item:hover {
+  color: #fff !important;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to bottom, #23235c, #000);
+  padding-top: 120px;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 20px auto;
+  color: #ccc;
+}
+
+/* Sections */
+section h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+section p {
+  color: #bbb;
+}
+
+.hub-img {
+  max-width: 300px;
+}
+
+/* Buttons */
+.btn-outline-light {
+  border-radius: 20px;
+  padding: 8px 18px;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(to top, #2a2a8e, #000);
+}
+
+.footer h5 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}

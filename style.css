@@ -1,0 +1,83 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.discord-navbar {
+  background-color: #23272a;
+  padding: 0.8rem 1rem;
+}
+.discord-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.2s ease;
+}
+.discord-navbar .nav-link:hover {
+  color: #5865F2;
+}
+.discord-navbar .btn {
+  font-weight: 600;
+}
+
+/* Hero */
+.discord-hero {
+  background: linear-gradient(180deg, #404EED, #23272a);
+  min-height: 80vh;
+  padding: 60px 0;
+}
+
+/* Wave Dividers */
+.wave-divider {
+  line-height: 0;
+}
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 150px;
+}
+.wave-divider.flip svg {
+  transform: rotate(180deg);
+}
+
+/* Footer */
+.discord-footer {
+  background: linear-gradient(180deg, #404EED, #5865F2);
+  font-size: 14px;
+}
+.discord-footer h6 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.discord-footer a {
+  color: #dcdcdc;
+  text-decoration: none;
+}
+.discord-footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+.discord-footer .social-icons a {
+  color: white;
+  margin-right: 12px;
+  font-size: 20px;
+  transition: color 0.2s;
+}
+.discord-footer .social-icons a:hover {
+  color: #23272a;
+}
+.discord-wordmark h1 {
+  font-size: 80px;
+  font-weight: 800;
+  color: #ffffff;
+  opacity: 0.2;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .discord-wordmark h1 {
+    font-size: 40px;
+  }
+}

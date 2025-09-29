@@ -1,0 +1,19 @@
+/* Hero section custom background */
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #5865f2, #7289da);
+  padding: 60px 0;
+}
+
+/* Perk cards */
+.perk-card {
+  transition: transform 0.2s;
+}
+.perk-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer links hover */
+.footer a:hover {
+  text-decoration: underline;
+}
